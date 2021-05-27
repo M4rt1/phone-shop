@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+$main-color:rgb(81, 148, 36);
+$second-color:rgb(124, 40, 19);
+$title-font:'Odibee Sans', cursive;  
+$brick-font: 'Roboto Condensed', sans-serif;
+
+.navbar{
+    position:absolute;
+    display: flex;
+    width:100%;
+    height:60px;
+    background-color:aliceblue;
+    box-shadow: 0px 2px 5px 3px rgb(216, 216, 216);
+    align-items: center;
+    padding: 0 0 0 30px;
+    font-size: 2rem;
+    color:$main-color;
+    font-family:$title-font;
+    user-select: none;
+    .products-navbar{
+        display:flex;
+        width: fit-content;
+        border:none;
+        background-color: inherit;
+        margin-left:auto;
+        margin-right:20px;
+        font-size: 1.8rem;
+        font-family:$brick-font;
+        color:$second-color;
+        transition: 0.3s ease-out;
+        &:hover{
+            cursor: pointer;
+            font-size: 1.9rem;
+            color:lighten($second-color,10%);
+        }
+    }
+    .fa-caret-square-down{
+        padding:0;
+        width:50px;
+        margin-right:50px;
+        color:$second-color;
+    }
+}
