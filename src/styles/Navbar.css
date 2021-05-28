@@ -23,6 +23,15 @@
           user-select: none;
 }
 
+.navbar .logo-btn {
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 .navbar .nav-btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;

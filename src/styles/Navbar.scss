@@ -18,6 +18,14 @@ $brick-font: 'Roboto Condensed', sans-serif;
     color:$main-color;
     font-family:$title-font;
     user-select: none;
+    .logo-btn{
+        border:none;
+        background-color: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        color:inherit;
+        cursor: pointer;
+    }
     .nav-btn{
         width: fit-content;
         height:auto;
