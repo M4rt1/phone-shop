@@ -6,7 +6,7 @@ $title-font:'Odibee Sans', cursive;
 $brick-font: 'Roboto Condensed', sans-serif;
 
 .navbar{
-    position:absolute;
+    position:relative;
     display: flex;
     width:100%;
     height:60px;
@@ -18,6 +18,25 @@ $brick-font: 'Roboto Condensed', sans-serif;
     color:$main-color;
     font-family:$title-font;
     user-select: none;
+    .nav-btn{
+        width: fit-content;
+        height:auto;
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+        .fa-caret-square-down{
+            font-size: 2rem;
+            padding:0;
+            width:50px;
+            margin-right:50px;
+            color:$second-color;
+            transition:0.3s ease-out;
+            &:hover{
+                color:lighten($second-color,10%);
+                font-size:2.1rem;
+            }
+        }
+    }
     .products-navbar{
         display:flex;
         width: fit-content;
@@ -34,11 +53,5 @@ $brick-font: 'Roboto Condensed', sans-serif;
             font-size: 1.9rem;
             color:lighten($second-color,10%);
         }
-    }
-    .fa-caret-square-down{
-        padding:0;
-        width:50px;
-        margin-right:50px;
-        color:$second-color;
     }
 }

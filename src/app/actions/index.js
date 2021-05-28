@@ -15,3 +15,9 @@ export const showContact = () => {
         type: 'SHOW_CONTACT'
     }
 }
+
+export const showNavMenu = () => {
+    return {
+        type: 'SHOW_NAVMENU'
+    }
+}

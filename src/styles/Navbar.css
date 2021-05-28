@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 .navbar {
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +21,31 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.navbar .nav-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.navbar .nav-btn .fa-caret-square-down {
+  font-size: 2rem;
+  padding: 0;
+  width: 50px;
+  margin-right: 50px;
+  color: #7c2813;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.navbar .nav-btn .fa-caret-square-down:hover {
+  color: #a8361a;
+  font-size: 2.1rem;
 }
 
 .navbar .products-navbar {
@@ -45,12 +70,5 @@
   cursor: pointer;
   font-size: 1.9rem;
   color: #a8361a;
-}
-
-.navbar .fa-caret-square-down {
-  padding: 0;
-  width: 50px;
-  margin-right: 50px;
-  color: #7c2813;
 }
 /*# sourceMappingURL=Navbar.css.map */

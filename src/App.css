@@ -1,7 +1,26 @@
 .App{
+    display: flex;
     height:100%;
     width:100%;
     margin:0;
     padding: 0;
     overflow-x: hidden;
+    flex-direction: column;
+}
+
+.nav-list{
+    position: absolute;
+    display: flex;
+    margin-top:60px;
+    background-color: rgba(6, 43, 75, 0.527);
+    padding:10px 20px;
+
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style-type: none;
 }
