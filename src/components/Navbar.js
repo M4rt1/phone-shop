@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Navbar.css';
 import { useDispatch } from 'react-redux';
 import { showProducts, showNavMenu } from '../app/actions';

@@ -1,28 +1,68 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { useSelector } from 'react-redux';
+import Default from './components/Default';
+import { useSelector, useDispatch } from 'react-redux';
+import { showAbout, showTechSection, showContact } from './app/actions';
 
 function App() {
-  const showProducts = useSelector(state => state.showProducts);
-  // console.log(showProducts);
-  const showNavMenu = useSelector(state => state.showNavMenu);
+  const showProductsState = useSelector(state => state.showProducts);
+  const showAboutState = useSelector(state => state.showAbout);
+  const showContactState = useSelector(state => state.showContact);
+  const showTechSectionState = useSelector(state => state.showTechSection);
+  const showNavMenuState = useSelector(state => state.showNavMenu);
+  const dispatch = useDispatch();
+
   return (
     <div className="App">
       <Navbar />
-      {showNavMenu ?
-        <div className='nav-list'>
-          <ul>
-            <li><button>About Us</button></li>
-            <li><button>Tech Section</button></li>
-            <li><button>Contact Us</button></li>
-          </ul>
-        </div> :
-        ''}
-      {showProducts ?
-        <div className='products'>PRODUCTS</div> :
-        ''}
-    </div>
+      {
+        showNavMenuState ?
+          <div className='nav-list'>
+            <ul>
+              <li><button onClick={() => dispatch(showAbout())}>About Us</button><hr></hr></li>
+              <li><button onClick={() => dispatch(showTechSection())}>Tech Section</button><hr></hr></li>
+              <li><button onClick={() => dispatch(showContact())}>Contact Us</button></li>
+            </ul>
+          </div> :
+          ''
+      }
+      {
+        !showProductsState & !showAboutState & !showTechSectionState & !showContactState ?
+          <div className='products'>
+            <Default />
+          </div> :
+          ''
+      }
+      {
+        showProductsState ?
+          < div className='products'>
+            PRODUCTS
+          </div> :
+          ''
+      }
+      {
+        showAboutState ?
+          <div className='products'>
+            About
+          </div> :
+          ''
+      }
+      {
+        showTechSectionState ?
+          <div className='products'>
+            Tech
+          </div> :
+          ''
+      }
+      {
+        showContactState ?
+          <div className='products'>
+            Contact
+          </div> :
+          ''
+      }
+    </div >
   );
 }
 

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+$brick-font: 'Roboto Condensed', sans-serif;
+$second-color:rgb(128, 4, 4);
+
+.App{
+    display: flex;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.nav-list{
+    position: absolute;
+    display: flex;
+    right:10px;
+    margin-top:60px;
+    background-color: rgba(81, 148, 36, 0.301);
+    padding:10px 20px;
+    border-radius: 15px;
+    border:1px solid black;
+    ul{
+        margin:0;
+        padding:0;
+        li{
+            list-style-type: none;
+            text-align: center;
+            button{
+                border:none;
+                background-color: inherit;
+                cursor: pointer;
+                font-family: $brick-font;
+                font-size: 1.3rem;
+                color:$second-color;
+                transition:0.3s ease-out;
+                &:hover{
+                    color:lighten($second-color,10%);
+                    font-size:1.4rem;
+                }
+            }
+        }
+    }
+}
+

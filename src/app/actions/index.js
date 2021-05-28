@@ -21,3 +21,9 @@ export const showNavMenu = () => {
         type: 'SHOW_NAVMENU'
     }
 }
+
+export const showTechSection = () => {
+    return {
+        type: 'SHOW_TECHSECTION'
+    }
+}

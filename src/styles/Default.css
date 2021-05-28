@@ -1,0 +1,10 @@
+.default-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: red;
+}
+/*# sourceMappingURL=Default.css.map */
