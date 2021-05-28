@@ -1,7 +1,10 @@
 .default-container{
     position:relative;
+    background-image: url('../medias/sm-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display:flex;
     width:100%;
-    height:auto;
+    height:calc(100vh - 60px);
     background-color: red;
 }
