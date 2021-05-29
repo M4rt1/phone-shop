@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.products-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../medias/sm-def-bg-v2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+.products-container p {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  text-shadow: 2px 2px #3daa2e;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.products-container .brand-container {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 'apple nokia samsung' 'huawei oppo maxcom' 'lg motorola xiaomi';
+}
+
+.products-container .brand-container button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #eca522;
+  color: rgba(255, 255, 255, 0.822);
+  -webkit-box-shadow: 0px 5px 4px 0px #9e5502;
+          box-shadow: 0px 5px 4px 0px #9e5502;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.products-container .brand-container button:hover {
+  background-color: #edad35;
+  -webkit-box-shadow: 0px 5px 6px 2px #9e5502;
+          box-shadow: 0px 5px 6px 2px #9e5502;
+  color: white;
+}
+
+.products-container .brand-container button:active {
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 3px white;
+}
+/*# sourceMappingURL=Products.css.map */

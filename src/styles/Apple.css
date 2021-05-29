@@ -1,0 +1,52 @@
+.iphones {
+  display: -ms-grid;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.iphones .product {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 5px 5px 5px;
+  border: 2px solid black;
+}
+
+.iphones .product .iphone-desc {
+  position: relative;
+  margin-top: -115%;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.842);
+  width: 180px;
+  height: 221px;
+  display: none;
+}
+
+.iphones .product:hover .iphone-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.iphones .product .iphone-name {
+  text-align: center;
+  color: black;
+  text-shadow: none;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.349);
+  background-color: rgba(255, 255, 255, 0.425);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Apple.css.map */

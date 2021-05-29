@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Default from './components/Default';
+import Products from './components/Products';
 import { useSelector, useDispatch } from 'react-redux';
 import { showAbout, showTechSection, showContact } from './app/actions';
 
@@ -37,7 +38,7 @@ function App() {
       {
         showProductsState ?
           < div className='products'>
-            PRODUCTS
+            <Products />
           </div> :
           ''
       }
