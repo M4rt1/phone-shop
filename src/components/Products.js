@@ -1,6 +1,14 @@
 import '../styles/Products.css';
 import React, { useState } from 'react';
 import Apple from './Apple';
+import Nokia from './Nokia';
+import Samsung from './Samsung';
+import Huawei from './Huawei';
+import Oppo from './Oppo';
+import MaxCom from './MaxCom';
+import LG from './LG';
+import Motorola from './Motorola';
+import Xiaomi from './Xiaomi';
 
 function Products() {
     const [brandState, setBrandState] = useState('');
@@ -31,42 +39,42 @@ function Products() {
                         brandState === 'nokia' ?
                             <>
                                 <button onClick={() => setBrandState('')}>Back</button>
-                                <p>NOKIA</p>
+                                <Nokia />
                             </> :
                             brandState === 'samsung' ?
                                 <>
                                     <button onClick={() => setBrandState('')}>Back</button>
-                                    <p>SAMSUNG</p>
+                                    <Samsung />
                                 </> :
                                 brandState === 'huawei' ?
                                     <>
                                         <button onClick={() => setBrandState('')}>Back</button>
-                                        <p>HUAWEI</p>
+                                        <Huawei />
                                     </> :
                                     brandState === 'oppo' ?
                                         <>
                                             <button onClick={() => setBrandState('')}>Back</button>
-                                            <p>OPPO</p>
+                                            <Oppo />
                                         </> :
                                         brandState === 'maxcom' ?
                                             <>
                                                 <button onClick={() => setBrandState('')}>Back</button>
-                                                <p>MAXCOM</p>
+                                                <MaxCom />
                                             </> :
                                             brandState === 'lg' ?
                                                 <>
                                                     <button onClick={() => setBrandState('')}>Back</button>
-                                                    <p>LG</p>
+                                                    <LG />
                                                 </> :
                                                 brandState === 'motorola' ?
                                                     <>
                                                         <button onClick={() => setBrandState('')}>Back</button>
-                                                        <p>MOTOROLA</p>
+                                                        <Motorola />
                                                     </> :
                                                     brandState === 'xiaomi' ?
                                                         <>
                                                             <button onClick={() => setBrandState('')}>Back</button>
-                                                            <p>XIAOMI</p>
+                                                            <Xiaomi />
                                                         </> :
 
                                                         ''
