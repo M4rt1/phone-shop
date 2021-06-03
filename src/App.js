@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Default from './components/Default';
 import Products from './components/Products';
+import About from './components/About';
 import { useSelector, useDispatch } from 'react-redux';
 import { showAbout, showTechSection, showContact } from './app/actions';
 
@@ -45,7 +46,7 @@ function App() {
       {
         showAboutState ?
           <div className='products'>
-            About
+            <About />
           </div> :
           ''
       }
