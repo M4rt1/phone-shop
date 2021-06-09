@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/phone-shop/static/css/main.8ef83c2d.chunk.css",
+    "main.js": "/phone-shop/static/js/main.148d9810.chunk.js",
+    "main.js.map": "/phone-shop/static/js/main.148d9810.chunk.js.map",
+    "runtime-main.js": "/phone-shop/static/js/runtime-main.2222d1af.js",
+    "runtime-main.js.map": "/phone-shop/static/js/runtime-main.2222d1af.js.map",
+    "static/js/2.fcb5f657.chunk.js": "/phone-shop/static/js/2.fcb5f657.chunk.js",
+    "static/js/2.fcb5f657.chunk.js.map": "/phone-shop/static/js/2.fcb5f657.chunk.js.map",
+    "index.html": "/phone-shop/index.html",
+    "static/css/main.8ef83c2d.chunk.css.map": "/phone-shop/static/css/main.8ef83c2d.chunk.css.map",
+    "static/js/2.fcb5f657.chunk.js.LICENSE.txt": "/phone-shop/static/js/2.fcb5f657.chunk.js.LICENSE.txt",
+    "static/media/Default.css": "/phone-shop/static/media/sm-bg.aa9b44ec.svg",
+    "static/media/Products.css": "/phone-shop/static/media/sm-def-bg-v2.c1fd2d08.svg",
+    "static/media/About.css": "/phone-shop/static/media/weirdboard.e6cbd19c.jpeg",
+    "static/media/TechSection.css": "/phone-shop/static/media/wip.22ac1ced.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2222d1af.js",
+    "static/js/2.fcb5f657.chunk.js",
+    "static/css/main.8ef83c2d.chunk.css",
+    "static/js/main.148d9810.chunk.js"
+  ]
+}
