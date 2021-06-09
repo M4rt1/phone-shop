@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,wEAAI;AAGZ,AAAA,eAAe,CAAA;EACX,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,yBAAyB;EAC3C,mBAAmB,EAAE,MAAM;EAC3B,eAAe,EAAE,KAAK;CACzB",
+    "sources": [
+        "TechSection.scss"
+    ],
+    "names": [],
+    "file": "TechSection.css"
+}

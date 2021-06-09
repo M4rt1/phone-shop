@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Default from './components/Default';
 import Products from './components/Products';
 import About from './components/About';
+import ContactUs from './components/ContactUs';
+import TechSection from './components/TechSection';
 import { useSelector, useDispatch } from 'react-redux';
 import { showAbout, showTechSection, showContact } from './app/actions';
 
@@ -53,14 +55,14 @@ function App() {
       {
         showTechSectionState ?
           <div className='products'>
-            Tech
+            <TechSection />
           </div> :
           ''
       }
       {
         showContactState ?
           <div className='products'>
-            Contact
+            <ContactUs />
           </div> :
           ''
       }
